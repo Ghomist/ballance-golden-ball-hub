@@ -41,7 +41,15 @@ jobs:
           fi
 
           base="${{ github.event.before }}"
-          case "$base" in "" | "0000000000000000000000000000000000000000") base="HEAD~1" ;; esac
+          case "$base" in
+            "" | "0000000000000000000000000000000000000000")
+              # 新分支/首次推送：没有可比较的历史，前后来一次全量部署最稳
+              echo "首次推送：前后端都部署"
+              echo "web=true" >> "$GITHUB_OUTPUT"
+              echo "backend=true" >> "$GITHUB_OUTPUT"
+              exit 0
+              ;;
+          esac
           git diff --name-only "$base" "HEAD" | tee /tmp/changed.txt
 
           grep -q '^web/' /tmp/changed.txt && web=true || web=false
