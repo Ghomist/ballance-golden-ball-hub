@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
+// CI（.github/workflows/deploy.yml）用 `pnpm build`（production）产出带 /gb/ 前缀的 dist 后 rsync 到服务器 ~/gbh/web/dist
 export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss()],
   // 生产挂在 https://dl.ballance.top/gb/ 下，资源与 API 前缀都要带上；开发仍用根路径
