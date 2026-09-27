@@ -1,0 +1,2279 @@
+{
+ "source": "平衡球地图炼金难度排行.xlsx",
+ "maps": [
+  {
+   "name": "多维合作",
+   "author": "小李子623",
+   "difficulty_level": 0,
+   "description": ""
+  },
+  {
+   "name": "Omit Superfluous Things",
+   "author": "pseudoacetyl",
+   "difficulty_level": 0,
+   "description": ""
+  },
+  {
+   "name": "单轨长征练习图",
+   "author": "未知",
+   "difficulty_level": 0,
+   "description": ""
+  },
+  {
+   "name": "Painstaking Journey",
+   "author": "pseudoacetyl",
+   "difficulty_level": 0,
+   "description": ""
+  },
+  {
+   "name": "Level 1~4",
+   "author": "官方",
+   "difficulty_level": 1,
+   "description": ""
+  },
+  {
+   "name": "未命名图",
+   "author": "2点718281828",
+   "difficulty_level": 1,
+   "description": ""
+  },
+  {
+   "name": "歧径",
+   "author": "BallanceBug",
+   "difficulty_level": 1,
+   "description": ""
+  },
+  {
+   "name": "初心回廊",
+   "author": "澈零",
+   "difficulty_level": 1,
+   "description": ""
+  },
+  {
+   "name": "秋千练习图",
+   "author": "廖景萱",
+   "difficulty_level": 1,
+   "description": ""
+  },
+  {
+   "name": "秋名道木球版",
+   "author": "失衡之梦",
+   "difficulty_level": 1,
+   "description": ""
+  },
+  {
+   "name": "迈出这一步",
+   "author": "BallanceLover",
+   "difficulty_level": 1,
+   "description": ""
+  },
+  {
+   "name": "脑力风暴",
+   "author": "vipeazone",
+   "difficulty_level": 1,
+   "description": ""
+  },
+  {
+   "name": "新春地图",
+   "author": "2jjy & jxpxxzj",
+   "difficulty_level": 1,
+   "description": ""
+  },
+  {
+   "name": "真·比欧图——纸球运气测试图",
+   "author": "BallanceBug",
+   "difficulty_level": 1,
+   "description": ""
+  },
+  {
+   "name": "Level 5~6",
+   "author": "官方",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "纸球他要飞2",
+   "author": "zyl",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "风扇练习图",
+   "author": "其乐融融",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "BML_Example_Level",
+   "author": "Gamepiaynmo",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "Ballance Happy paradise",
+   "author": "q717021",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "Happy 2026",
+   "author": "pseudoacetyl",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "平衡玉川V1.0",
+   "author": "金银玲控",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "Space Rail1",
+   "author": "超级玛丽smile2",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "Space Rail2",
+   "author": "超级玛丽smile2",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "Space Rail3",
+   "author": "超级玛丽smile2",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "真·比欧图（木球版）",
+   "author": "BallanceBug",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "小小的旅途",
+   "author": "Ghomist",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "紧张图V3.3",
+   "author": "紧张2007324",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "虚实世界-货仓",
+   "author": "dahkjdas",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "冰空心语",
+   "author": "湮尘灬冷曦",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "虎年小图",
+   "author": "湮尘灬冷曦",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "游戏人生",
+   "author": "平衡四边球",
+   "difficulty_level": 2,
+   "description": "仅允许第四节死一次球"
+  },
+  {
+   "name": "双重路径",
+   "author": "skb7757",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "200516图",
+   "author": "BallanceBug",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "200626图",
+   "author": "lydjjlyd",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "镜界空轨",
+   "author": "BallanceBug",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "深空遨游",
+   "author": "其乐融融",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "平衡家宴",
+   "author": "廖景萱",
+   "difficulty_level": 2,
+   "description": ""
+  },
+  {
+   "name": "Level 7~10",
+   "author": "官方",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "该隐图1.4简单版",
+   "author": "该隐 & Ballexer",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "急速翻滚1",
+   "author": "lydjjlyd",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "急速翻滚2",
+   "author": "lydjjlyd",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "完美思维1",
+   "author": "金银铃控 & ageofballance",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "百变小球",
+   "author": "0走路草0",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "嘉年华V1.1",
+   "author": "fiype",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "失落之城V1.1",
+   "author": "zyl & 平衡四边球",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "地月穿梭",
+   "author": "平衡总统",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "大恒战旗-仿原",
+   "author": "dahkjdas",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "太太乐鸡(精)",
+   "author": "傲骨银狼ヶ璇",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "萌新快乐图1",
+   "author": "dahkjdas",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "大恒图8.2-置换中枢",
+   "author": "dahkjdas",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "大恒图8.3-侧轨捷径",
+   "author": "dahkjdas",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "疯狂机关2",
+   "author": "2jjy",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "All-We-Know",
+   "author": "Ghomist",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "诡衡",
+   "author": "zyl",
+   "difficulty_level": 3,
+   "description": ""
+  },
+  {
+   "name": "Level 11~12",
+   "author": "官方",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "250430图",
+   "author": "lydjjlyd",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "180519图",
+   "author": "BallanceBug",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "210522图",
+   "author": "BallanceBug",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "逻辑时代",
+   "author": "dahkjdas",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "嘉年华V2.5",
+   "author": "zyl",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "秋名道石球版",
+   "author": "失衡之梦",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "棒冰图",
+   "author": "61粉丝",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "方正天元",
+   "author": "湮尘灬冷曦",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "逻技地带",
+   "author": "Ballexer",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "星际迷航DEMO",
+   "author": "紧张2007324",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "创意平衡",
+   "author": "fiype",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "完美思维2",
+   "author": "Burning红云",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "虚实世界-奶茶",
+   "author": "dahkjdas",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "大恒图8.1-木板逻辑",
+   "author": "dahkjdas",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "大恒图8.5-回家",
+   "author": "dahkjdas",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "原初星辰",
+   "author": "dahkjdas",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "萌新快乐图3",
+   "author": "dahkjdas",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "萌新快乐图5",
+   "author": "dahkjdas",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "未能抵达的天空",
+   "author": "Entity_303",
+   "difficulty_level": 4,
+   "description": ""
+  },
+  {
+   "name": "Level 13",
+   "author": "官方",
+   "difficulty_level": 5,
+   "description": ""
+  },
+  {
+   "name": "全家福1",
+   "author": "梨栠washing",
+   "difficulty_level": 5,
+   "description": ""
+  },
+  {
+   "name": "全家福2",
+   "author": "梨栠washing",
+   "difficulty_level": 5,
+   "description": ""
+  },
+  {
+   "name": "谜雾",
+   "author": "Ghomist & 小李子623",
+   "difficulty_level": 5,
+   "description": ""
+  },
+  {
+   "name": "胶垣漫游",
+   "author": "小李子623",
+   "difficulty_level": 5,
+   "description": ""
+  },
+  {
+   "name": "萌新快乐图2",
+   "author": "dahkjdas",
+   "difficulty_level": 5,
+   "description": ""
+  },
+  {
+   "name": "萌新快乐图4",
+   "author": "dahkjdas",
+   "difficulty_level": 5,
+   "description": ""
+  },
+  {
+   "name": "浮空岛",
+   "author": "廖景萱",
+   "difficulty_level": 5,
+   "description": ""
+  },
+  {
+   "name": "时空之梦",
+   "author": "夜空云玲",
+   "difficulty_level": 5,
+   "description": "仅允许第二节死一次球"
+  },
+  {
+   "name": "Hevel_11",
+   "author": "Burning红云",
+   "difficulty_level": 5,
+   "description": ""
+  },
+  {
+   "name": "永恒之心3.0——四核逻辑",
+   "author": "北顾夕",
+   "difficulty_level": 5,
+   "description": ""
+  },
+  {
+   "name": "危崖边境",
+   "author": "湮尘灬冷曦",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "大恒图8.4-逻技2021",
+   "author": "dahkjdas",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "新春大道",
+   "author": "rushing_balls",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "萤火之森",
+   "author": "skictick",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "四叶草图",
+   "author": "幸运草",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "樱空忆雪",
+   "author": "幸运草",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "平衡小径1.2",
+   "author": "Burning红云",
+   "difficulty_level": 6,
+   "description": "仅允许第八节死一次球"
+  },
+  {
+   "name": "平衡小径2.2",
+   "author": "Burning红云",
+   "difficulty_level": 6,
+   "description": "仅允许第八节死一次球"
+  },
+  {
+   "name": "星汉乾坤",
+   "author": "飘逸冷星",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "平衡玉川V2.1",
+   "author": "金银玲控",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "轮回之旅",
+   "author": "纸块块",
+   "difficulty_level": 6,
+   "description": "仅允许第三、四、五节各死一次球"
+  },
+  {
+   "name": "穿云之箭",
+   "author": "BallanceBug",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "勇往直前V3.0",
+   "author": "gamepiaynmo & 赢彻",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "娱乐仿真图2",
+   "author": "lydjjlyd",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "淡定图",
+   "author": "Bjcwgqm",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "灰城勿扰",
+   "author": "gamepiaynmo",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "云之彼端",
+   "author": "Burning红云",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "Level++ 9",
+   "author": "不药而愈的匿名安慰",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "虚实世界-微观",
+   "author": "dahkjdas",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "虚实世界-工厂",
+   "author": "dahkjdas",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "神毒鬼道",
+   "author": "小李子623",
+   "difficulty_level": 6,
+   "description": "仅允许第四节死一次球"
+  },
+  {
+   "name": "20周年纪念图",
+   "author": "其乐融融 & 湮尘灬冷曦",
+   "difficulty_level": 6,
+   "description": ""
+  },
+  {
+   "name": "1~12连打",
+   "author": "官方",
+   "difficulty_level": 7,
+   "description": "暂时只收原版连打前12关1命，没打13关或13关掉球的情况"
+  },
+  {
+   "name": "蓝星2：空间工业区",
+   "author": "Sterd",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "巅峰时刻2",
+   "author": "平衡总统",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "天穹之旅",
+   "author": "zyl",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "城市街道",
+   "author": "zyl",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "失落都市",
+   "author": "SomeOne_001",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "伪·力量V4.4",
+   "author": "紧张2007324",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "绝望之都1",
+   "author": "Burning红云",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "绝望之都2",
+   "author": "Burning红云",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "希望之城",
+   "author": "平衡总统",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "暮光之城",
+   "author": "Nice_melodies",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "迷草幻城",
+   "author": "幸运草 & 平衡四边球",
+   "difficulty_level": 7,
+   "description": "仅允许第八节死一次球"
+  },
+  {
+   "name": "幸运草图II",
+   "author": "幸运草",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "未来的往事",
+   "author": "Entity_303",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "永恒之心1.2",
+   "author": "北顾夕",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "大恒战旗-速度",
+   "author": "dahkjdas",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "海染砗磲（竞速版）",
+   "author": "北顾夕",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "平衡帝国",
+   "author": "燃烧的纸球",
+   "difficulty_level": 7,
+   "description": ""
+  },
+  {
+   "name": "绿坝图",
+   "author": "61粉丝",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "娱乐仿真图1",
+   "author": "lydjjlyd",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "娱乐仿真图3",
+   "author": "lydjjlyd",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "四面楚歌1.0",
+   "author": "湮尘灬冷曦",
+   "difficulty_level": 8,
+   "description": "仅允许第五节死一次球"
+  },
+  {
+   "name": "四面楚歌2.0",
+   "author": "湮尘灬冷曦",
+   "difficulty_level": 8,
+   "description": "仅允许第八节死一次球"
+  },
+  {
+   "name": "完美思维3",
+   "author": "飘逸冷星 & 0走路草0",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "谜之空屿",
+   "author": "QbethQ",
+   "difficulty_level": 8,
+   "description": "仅允许第二节死两次球"
+  },
+  {
+   "name": "镜花水月",
+   "author": "梨栠washing",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "2010年代",
+   "author": "BallanceBug & 飘逸冷星",
+   "difficulty_level": 8,
+   "description": "仅允许第二节死一次球"
+  },
+  {
+   "name": "平衡小径3.2",
+   "author": "Burning红云",
+   "difficulty_level": 8,
+   "description": "仅允许第八节死一次球"
+  },
+  {
+   "name": "重力的审判",
+   "author": "小李子623",
+   "difficulty_level": 8,
+   "description": "仅允许第五节死一次球"
+  },
+  {
+   "name": "蓝星序曲V1.3",
+   "author": "Sterd",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "不走回头路V1.0",
+   "author": "oing9179",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "平衡环线",
+   "author": "hhmmdd123",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "东方夜谭",
+   "author": "Perfectthought",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "巅峰时刻1",
+   "author": "平衡总统",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "魔脓空间站",
+   "author": "傲骨银狼ヶ璇",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "平衡小坑V2.0",
+   "author": "fiype",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "星罗棋布",
+   "author": "飘逸冷星",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "魔虬",
+   "author": "失衡之梦",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "次元航路",
+   "author": "湮尘灬冷曦",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "逻辑绕绕图",
+   "author": "lydjjlyd",
+   "difficulty_level": 8,
+   "description": ""
+  },
+  {
+   "name": "1~13连打",
+   "author": "官方",
+   "difficulty_level": 9,
+   "description": "原版连打与1-13连体图均可"
+  },
+  {
+   "name": "云幻天桥",
+   "author": "渴望 & dahkjdas & skictick & 平衡四边球 & 湮尘灬冷曦",
+   "difficulty_level": 9,
+   "description": ""
+  },
+  {
+   "name": "望星城",
+   "author": "skictick & 澈零",
+   "difficulty_level": 9,
+   "description": ""
+  },
+  {
+   "name": "云顶之弈",
+   "author": "zyl",
+   "difficulty_level": 9,
+   "description": ""
+  },
+  {
+   "name": "紧张图1",
+   "author": "紧张2007324",
+   "difficulty_level": 9,
+   "description": ""
+  },
+  {
+   "name": "圈套",
+   "author": "Ballexer",
+   "difficulty_level": 9,
+   "description": ""
+  },
+  {
+   "name": "神逻鬼道",
+   "author": "小李子623",
+   "difficulty_level": 9,
+   "description": ""
+  },
+  {
+   "name": "平衡小径4.0",
+   "author": "Burning红云",
+   "difficulty_level": 9,
+   "description": "仅允许第八节死一次球fc金第八节开头的那个命可不吃"
+  },
+  {
+   "name": "勇往直前4",
+   "author": "赢彻",
+   "difficulty_level": 9,
+   "description": ""
+  },
+  {
+   "name": "失落原野",
+   "author": "SomeOne_001",
+   "difficulty_level": 9,
+   "description": ""
+  },
+  {
+   "name": "Level++ 3",
+   "author": "不药而愈的匿名安慰",
+   "difficulty_level": 10,
+   "description": ""
+  },
+  {
+   "name": "平衡之巅王者试炼之王道征途",
+   "author": "平衡四边球",
+   "difficulty_level": 10,
+   "description": ""
+  },
+  {
+   "name": "乾坤五极",
+   "author": "Ghomist",
+   "difficulty_level": 10,
+   "description": "仅允许第四节死一次球"
+  },
+  {
+   "name": "路面操作",
+   "author": "Entity_303",
+   "difficulty_level": 10,
+   "description": ""
+  },
+  {
+   "name": "要素超载",
+   "author": "yyc12345",
+   "difficulty_level": 10,
+   "description": "fc金允许第五节死一次球吃分"
+  },
+  {
+   "name": "比欧图2",
+   "author": "小李子623",
+   "difficulty_level": 10,
+   "description": ""
+  },
+  {
+   "name": "单轨维度",
+   "author": "zyl",
+   "difficulty_level": 10,
+   "description": "仅允许第五节死一次球一命全分不包括第四节结尾盘点处的生命球"
+  },
+  {
+   "name": "寂灭渊海",
+   "author": "幸运草",
+   "difficulty_level": 10,
+   "description": ""
+  },
+  {
+   "name": "平衡小坑V1.0",
+   "author": "fiype",
+   "difficulty_level": 10,
+   "description": ""
+  },
+  {
+   "name": "单轨森林",
+   "author": "zyl",
+   "difficulty_level": 11,
+   "description": ""
+  },
+  {
+   "name": "泅溺幽海",
+   "author": "远来鸣鸠",
+   "difficulty_level": 11,
+   "description": ""
+  },
+  {
+   "name": "该隐图1.2",
+   "author": "该隐 & Ballexer",
+   "difficulty_level": 11,
+   "description": ""
+  },
+  {
+   "name": "该隐图1.1",
+   "author": "该隐 & Ballexer",
+   "difficulty_level": 11,
+   "description": ""
+  },
+  {
+   "name": "紧张图2",
+   "author": "紧张2007324",
+   "difficulty_level": 11,
+   "description": ""
+  },
+  {
+   "name": "平衡小径5.0",
+   "author": "Burning红云",
+   "difficulty_level": 11,
+   "description": "仅允许第八节死一次球"
+  },
+  {
+   "name": "比欧图1",
+   "author": "小李子623",
+   "difficulty_level": 11,
+   "description": ""
+  },
+  {
+   "name": "大恒逻辑II",
+   "author": "dahkjdas",
+   "difficulty_level": 11,
+   "description": ""
+  },
+  {
+   "name": "天宫街市",
+   "author": "whyyy & dahkjdas",
+   "difficulty_level": 12,
+   "description": ""
+  },
+  {
+   "name": "该隐图1.3",
+   "author": "该隐 & Ballexer",
+   "difficulty_level": 12,
+   "description": ""
+  },
+  {
+   "name": "该隐图1.4困难版",
+   "author": "该隐 & Ballexer",
+   "difficulty_level": 12,
+   "description": ""
+  },
+  {
+   "name": "6A级群岛观光V1.0",
+   "author": "schtonn",
+   "difficulty_level": 12,
+   "description": ""
+  },
+  {
+   "name": "大恒逻辑I",
+   "author": "dahkjdas",
+   "difficulty_level": 13,
+   "description": ""
+  },
+  {
+   "name": "澈零挑战1-敷衍",
+   "author": "澈零",
+   "difficulty_level": 14,
+   "description": ""
+  },
+  {
+   "name": "钢轨大王的复仇",
+   "author": "飘动的雨灵",
+   "difficulty_level": 14,
+   "description": ""
+  },
+  {
+   "name": "巅峰时刻3之独辟蹊径",
+   "author": "平衡总统",
+   "difficulty_level": 15,
+   "description": ""
+  },
+  {
+   "name": "九死一生（永恒之心2）五小节版",
+   "author": "北顾夕",
+   "difficulty_level": 15,
+   "description": ""
+  },
+  {
+   "name": "匹诺康尼城",
+   "author": "北顾夕",
+   "difficulty_level": 15,
+   "description": ""
+  },
+  {
+   "name": "命运的坐标",
+   "author": "小李子623",
+   "difficulty_level": 16,
+   "description": "需往后走原版的炼金路线，吃到结尾大脓分即为成功"
+  },
+  {
+   "name": "荣耀之盟",
+   "author": "渴望 & 飘逸冷星 & 纸块块",
+   "difficulty_level": null,
+   "description": ""
+  },
+  {
+   "name": "超·力量V5.0",
+   "author": "紧张2007324",
+   "difficulty_level": null,
+   "description": ""
+  },
+  {
+   "name": "6A级山地观光V1.0",
+   "author": "schtonn",
+   "difficulty_level": null,
+   "description": ""
+  },
+  {
+   "name": "Queen Ball（Easy）",
+   "author": "pseudoacetyl",
+   "difficulty_level": null,
+   "description": ""
+  },
+  {
+   "name": "恒纪元",
+   "author": "dahkjdas",
+   "difficulty_level": null,
+   "description": ""
+  },
+  {
+   "name": "海染砗磲（完整版）",
+   "author": "北顾夕",
+   "difficulty_level": null,
+   "description": "仅允许第八节死一次球"
+  },
+  {
+   "name": "九死一生（永恒之心2）七小节版",
+   "author": "北顾夕",
+   "difficulty_level": null,
+   "description": ""
+  },
+  {
+   "name": "时空幻境",
+   "author": "燃烧的纸球",
+   "difficulty_level": null,
+   "description": ""
+  },
+  {
+   "name": "Queen Ball(Hard)",
+   "author": "pseudoacetyl",
+   "difficulty_level": null,
+   "description": ""
+  },
+  {
+   "name": "New_World",
+   "author": "pseudoacetyl",
+   "difficulty_level": null,
+   "description": ""
+  },
+  {
+   "name": "比欧图3",
+   "author": "小李子623",
+   "difficulty_level": null,
+   "description": ""
+  },
+  {
+   "name": "路在球上(十骑球图)",
+   "author": "不药而愈的匿名安慰",
+   "difficulty_level": null,
+   "description": ""
+  }
+ ],
+ "completions": [
+  {
+   "map_name": "命运的坐标",
+   "map_author": "小李子623",
+   "difficulty_level": 16,
+   "player": "Entity_303",
+   "cleared_on": "2026-04-08",
+   "video_url": "https://www.bilibili.com/video/BV1AqD7BUESi",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "命运的坐标",
+   "map_author": "小李子623",
+   "difficulty_level": 16,
+   "player": "飘动的雨灵",
+   "cleared_on": "2026-04-14",
+   "video_url": "https://www.bilibili.com/video/BV1ReQ3BJEBA",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "匹诺康尼城",
+   "map_author": "LonelySnow",
+   "difficulty_level": 15,
+   "player": "不药而愈的匿名安慰",
+   "cleared_on": "2026-04-18",
+   "video_url": "https://www.bilibili.com/video/BV1X9dWBfEFy",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "九死一生(永恒之心2)五小节版",
+   "map_author": "LonelySnow",
+   "difficulty_level": 15,
+   "player": "变形的木球",
+   "cleared_on": "2022-01-22",
+   "video_url": "https://www.bilibili.com/video/BV12L411c7NM/",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "巅峰时刻3之独辟蹊径",
+   "map_author": "平衡总统",
+   "difficulty_level": 15,
+   "player": "不药而愈的匿名安慰",
+   "cleared_on": "2026-04-22",
+   "video_url": "https://www.bilibili.com/video/BV1nmosB2Eq8",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "钢轨大王的复仇",
+   "map_author": "飘动的雨灵",
+   "difficulty_level": 14,
+   "player": "该隐",
+   "cleared_on": "2026-09-13",
+   "video_url": "https://www.bilibili.com/video/BV1RGYi61EbH/",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "钢轨大王的复仇",
+   "map_author": "飘动的雨灵",
+   "difficulty_level": 14,
+   "player": "渴望",
+   "cleared_on": "2026-09-14",
+   "video_url": "https://www.bilibili.com/video/BV1nbeV68EGe",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "钢轨大王的复仇",
+   "map_author": "飘动的雨灵",
+   "difficulty_level": 14,
+   "player": "不药而愈的匿名安慰",
+   "cleared_on": "2026-09-14",
+   "video_url": "https://www.bilibili.com/video/BV17zeV6XEMY",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "钢轨大王的复仇",
+   "map_author": "飘动的雨灵",
+   "difficulty_level": 14,
+   "player": "Albert-Kerman",
+   "cleared_on": "2026-09-15",
+   "video_url": "https://www.bilibili.com/video/BV1wpep6xEyy",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "澈零挑战1-敷衍",
+   "map_author": "澈零",
+   "difficulty_level": 14,
+   "player": "云居一号",
+   "cleared_on": "2021-10-11",
+   "video_url": "https://www.bilibili.com/video/BV1D44y1x7jc",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "澈零挑战1-敷衍",
+   "map_author": "澈零",
+   "difficulty_level": 14,
+   "player": "澈零",
+   "cleared_on": "2026-04-02",
+   "video_url": "https://www.bilibili.com/video/BV1mN9cBjEBF",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "澈零挑战1-敷衍",
+   "map_author": "澈零",
+   "difficulty_level": 14,
+   "player": "该隐",
+   "cleared_on": "2026-04-03",
+   "video_url": "https://www.bilibili.com/video/BV1CP9MBcECg",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "澈零挑战1-敷衍",
+   "map_author": "澈零",
+   "difficulty_level": 14,
+   "player": "不药而愈的匿名安慰",
+   "cleared_on": "2026-09-17",
+   "video_url": "https://www.bilibili.com/video/BV1eCe36GEx9",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "澈零挑战1-敷衍",
+   "map_author": "澈零",
+   "difficulty_level": 14,
+   "player": "平衡球录像哥",
+   "cleared_on": "2026-09-20",
+   "video_url": "https://www.bilibili.com/video/BV1See26NEpc",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "大恒逻辑I",
+   "map_author": "dahkjdas",
+   "difficulty_level": 13,
+   "player": "平衡球录像哥",
+   "cleared_on": "2026-09-05",
+   "video_url": "https://www.bilibili.com/video/BV1Qttz6eEwZ",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "大恒逻辑I",
+   "map_author": "dahkjdas",
+   "difficulty_level": 13,
+   "player": "平衡球录像哥",
+   "cleared_on": "2026-09-08",
+   "video_url": "https://www.bilibili.com/video/BV1mvbV6oEbi",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "6A级群岛观光V1.0",
+   "map_author": "schtonn",
+   "difficulty_level": 12,
+   "player": "Albert-Kerman",
+   "cleared_on": "2026-08-03",
+   "video_url": "https://www.bilibili.com/video/BV16W3d6WEAf",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.4（困难版）",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 12,
+   "player": "该隐",
+   "cleared_on": "2021-06-03",
+   "video_url": "https://www.bilibili.com/video/BV1Ro4y1C7QY",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.4（困难版）",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 12,
+   "player": "王牌机战天空feed",
+   "cleared_on": "2021-08-26",
+   "video_url": "https://www.bilibili.com/video/BV1Vy4y1G7D3",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.4（困难版）",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 12,
+   "player": "pseudoacetyl",
+   "cleared_on": "2025-05-20",
+   "video_url": "https://www.bilibili.com/video/BV1qbJazHEU1",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.4（困难版）",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 12,
+   "player": "牛羊小少_酷哥80742",
+   "cleared_on": "2026-07-02",
+   "video_url": "https://www.bilibili.com/video/BV1wBTE6CEf5",
+   "is_fc": true,
+   "note": "初始为石球"
+  },
+  {
+   "map_name": "该隐图1.4（困难版）",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 12,
+   "player": "平衡球录像哥",
+   "cleared_on": "2026-07-28",
+   "video_url": "https://www.bilibili.com/video/BV19Kg96PErQ",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.4（困难版）",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 12,
+   "player": "平衡球录像哥",
+   "cleared_on": "2026-08-31",
+   "video_url": "https://www.bilibili.com/video/BV1DTt468Ewd",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.3",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 12,
+   "player": "pseudoacetyl",
+   "cleared_on": "2025-07-13",
+   "video_url": "https://www.bilibili.com/video/BV1hiMZzpE6c",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.3",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 12,
+   "player": "平衡球录像哥",
+   "cleared_on": "2026-08-05",
+   "video_url": "https://www.bilibili.com/video/BV1T6M66mE7f",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.3",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 12,
+   "player": "平衡球录像哥",
+   "cleared_on": "2026-08-31",
+   "video_url": "https://www.bilibili.com/video/BV1DTt468Ewd",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "天宫街市",
+   "map_author": "whyyy & dahkjdas",
+   "difficulty_level": 12,
+   "player": "pseudoacetyl",
+   "cleared_on": "2024-07-21",
+   "video_url": "https://www.bilibili.com/video/BV15S42197iK",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "大恒逻辑II",
+   "map_author": "dahkjdas",
+   "difficulty_level": 11,
+   "player": "不药而愈的匿名安慰",
+   "cleared_on": "2026-09-09",
+   "video_url": "https://www.bilibili.com/video/BV1DMYt6jEZ3",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "比欧图1",
+   "map_author": "小李子623",
+   "difficulty_level": 11,
+   "player": "变形的木球",
+   "cleared_on": "2024-04-01",
+   "video_url": "https://www.bilibili.com/video/BV12t421n7HK",
+   "is_fc": true,
+   "note": "此图为《十纸超图》，与后来的比欧图1略有不同，鉴于其知名度也放在这里"
+  },
+  {
+   "map_name": "比欧图1",
+   "map_author": "小李子623",
+   "difficulty_level": 11,
+   "player": "远来鸣鸠",
+   "cleared_on": "2025-05-27",
+   "video_url": "https://www.bilibili.com/video/BV1PajdzoEyR",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "比欧图1",
+   "map_author": "小李子623",
+   "difficulty_level": 11,
+   "player": "王牌机战天空feed",
+   "cleared_on": "2026-06-13",
+   "video_url": "https://www.bilibili.com/video/BV1AFJJ6CErm",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "比欧图1",
+   "map_author": "小李子623",
+   "difficulty_level": 11,
+   "player": "飘动的雨灵",
+   "cleared_on": "2026-09-05",
+   "video_url": "https://www.bilibili.com/video/BV1qQt26wEFL",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "平衡小径5.0",
+   "map_author": "Burning红云",
+   "difficulty_level": 11,
+   "player": "pseudoacetyl",
+   "cleared_on": "2026-06-21",
+   "video_url": "https://www.bilibili.com/video/BV1A1jx6xE3Q",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "平衡小径5.0",
+   "map_author": "Burning红云",
+   "difficulty_level": 11,
+   "player": "Albert-Kerman",
+   "cleared_on": "2026-07-12",
+   "video_url": "https://www.bilibili.com/video/BV1GWNM6tE1F",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "平衡小径5.0",
+   "map_author": "Burning红云",
+   "difficulty_level": 11,
+   "player": "不药而愈的匿名安慰",
+   "cleared_on": "2026-09-24",
+   "video_url": "https://www.bilibili.com/video/BV1eGaN6HEvR",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "紧张图2",
+   "map_author": "紧张2007324",
+   "difficulty_level": 11,
+   "player": "该隐",
+   "cleared_on": "2019-02-07",
+   "video_url": "https://www.bilibili.com/video/BV1Jb41167uh",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "紧张图2",
+   "map_author": "紧张2007324",
+   "difficulty_level": 11,
+   "player": "渴望",
+   "cleared_on": "2022-07-29",
+   "video_url": "https://www.bilibili.com/video/BV17B4y1C7EP",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.1",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 11,
+   "player": "该隐",
+   "cleared_on": "2021-05-15",
+   "video_url": "https://www.bilibili.com/video/BV1wf4y1Y7iA",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.1",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 11,
+   "player": "王牌机战天空feed",
+   "cleared_on": "2021-08-19",
+   "video_url": "https://www.bilibili.com/video/BV1dh411i7Sx",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.1",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 11,
+   "player": "pseudoacetyl",
+   "cleared_on": "2025-07-13",
+   "video_url": "https://www.bilibili.com/video/BV1QiMZzpEF7",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.2",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 11,
+   "player": "王牌机战天空feed",
+   "cleared_on": "2021-08-13",
+   "video_url": "https://www.bilibili.com/video/BV1d64y1i7TM",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.2",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 11,
+   "player": "该隐",
+   "cleared_on": "2022-10-10",
+   "video_url": "https://www.bilibili.com/video/BV1s14y177f9",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "该隐图1.2",
+   "map_author": "该隐 & Ballexer",
+   "difficulty_level": 11,
+   "player": "pseudoacetyl",
+   "cleared_on": "2025-07-13",
+   "video_url": "https://www.bilibili.com/video/BV1hiMZzpEGv",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "泅溺幽海",
+   "map_author": "远来鸣鸠",
+   "difficulty_level": 11,
+   "player": "cccgift",
+   "cleared_on": "2025-11-04",
+   "video_url": "https://www.bilibili.com/video/BV1jM1EBfEoy",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "泅溺幽海",
+   "map_author": "远来鸣鸠",
+   "difficulty_level": 11,
+   "player": "远来鸣鸠",
+   "cleared_on": "2025-11-12",
+   "video_url": "https://www.bilibili.com/video/BV1D4CJBmEC6",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "泅溺幽海",
+   "map_author": "远来鸣鸠",
+   "difficulty_level": 11,
+   "player": "该隐",
+   "cleared_on": "2026-03-05",
+   "video_url": "https://www.bilibili.com/video/BV19FPqzQEoj",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "泅溺幽海",
+   "map_author": "远来鸣鸠",
+   "difficulty_level": 11,
+   "player": "pseudoacetyl",
+   "cleared_on": "2026-09-12",
+   "video_url": "https://www.bilibili.com/video/BV1DUYD67EkR",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "单轨森林",
+   "map_author": "zyl",
+   "difficulty_level": 11,
+   "player": "小李子623",
+   "cleared_on": "2023-04-03",
+   "video_url": "https://www.bilibili.com/video/BV1Zm4y1z78Z",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "单轨森林",
+   "map_author": "zyl",
+   "difficulty_level": 11,
+   "player": "平衡球录像哥",
+   "cleared_on": "2026-09-02",
+   "video_url": "https://www.bilibili.com/video/BV1JvtM6bEkj",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "平衡小坑V1.0",
+   "map_author": "fiype",
+   "difficulty_level": 10,
+   "player": "翼春雨",
+   "cleared_on": "2021-03-15",
+   "video_url": "https://www.bilibili.com/video/BV1Kb4y1Q7oT",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "平衡小坑V1.0",
+   "map_author": "fiype",
+   "difficulty_level": 10,
+   "player": "pseudoacetyl",
+   "cleared_on": "2024-04-27",
+   "video_url": "https://www.bilibili.com/video/BV131421X7qJ",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "寂灭渊海",
+   "map_author": "幸运草",
+   "difficulty_level": 10,
+   "player": "pseudoacetyl",
+   "cleared_on": "2026-09-12",
+   "video_url": "https://www.bilibili.com/video/BV1aUYD6EEcY",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "远古玫瑰的音符盒",
+   "cleared_on": "2019-07-12",
+   "video_url": "https://www.bilibili.com/video/BV1Qt411577k",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "渴望",
+   "cleared_on": "2019-07-14",
+   "video_url": "https://www.bilibili.com/video/BV1mt411V78C",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "该隐",
+   "cleared_on": "2019-07-14",
+   "video_url": "https://www.bilibili.com/video/BV1Ut411V7yW",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "云居一号",
+   "cleared_on": "2020-11-22",
+   "video_url": "https://www.bilibili.com/video/BV1XD4y1Q769",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "LonelySnow",
+   "cleared_on": "2022-01-28",
+   "video_url": "https://www.bilibili.com/video/BV1m3411h7k1",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "小锂离子",
+   "cleared_on": "2022-07-19",
+   "video_url": "https://www.bilibili.com/video/BV1ed4y1Q73o",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "云居一号",
+   "cleared_on": "2022-10-02",
+   "video_url": "https://www.bilibili.com/video/BV1Ve4y1z7KH",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "Bitol_X",
+   "cleared_on": "2023-01-03",
+   "video_url": "https://www.bilibili.com/video/BV1mv4y1i7gJ",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "有恒心得真知",
+   "cleared_on": "2023-09-11",
+   "video_url": "https://www.bilibili.com/video/BV1194y1x74s",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "pseudoacetyl",
+   "cleared_on": "2024-06-23",
+   "video_url": "https://www.bilibili.com/video/BV1Sf421B7oJ",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "比利677",
+   "cleared_on": "2024-08-19",
+   "video_url": "https://www.bilibili.com/video/BV1ubpCepEKg",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "cccgift",
+   "cleared_on": "2025-09-12",
+   "video_url": "https://www.bilibili.com/video/BV1QXHrzyEDH",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "小锂离子",
+   "cleared_on": "2025-08-19",
+   "video_url": "https://www.bilibili.com/video/BV16bePzUEWR",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "单轨维度",
+   "map_author": "zyl",
+   "difficulty_level": 10,
+   "player": "平衡球录像哥",
+   "cleared_on": "2026-09-02",
+   "video_url": "https://www.bilibili.com/video/BV1EitM6ZE8L",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "比欧图2",
+   "map_author": "小李子623",
+   "difficulty_level": 10,
+   "player": "该隐",
+   "cleared_on": "2024-10-16",
+   "video_url": "https://www.bilibili.com/video/BV1cKmwYeE6W",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "比欧图2",
+   "map_author": "小李子623",
+   "difficulty_level": 10,
+   "player": "Albert-Kerman",
+   "cleared_on": "2024-10-16",
+   "video_url": "https://www.bilibili.com/video/BV1b9mAYnE8V",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "比欧图2",
+   "map_author": "小李子623",
+   "difficulty_level": 10,
+   "player": "远来鸣鸠",
+   "cleared_on": "2024-11-26",
+   "video_url": "https://www.bilibili.com/video/BV1M4z5YFEqN",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "比欧图2",
+   "map_author": "小李子623",
+   "difficulty_level": 10,
+   "player": "比利677",
+   "cleared_on": "2025-08-22",
+   "video_url": "https://www.bilibili.com/video/BV1DQe4zwEJL",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "比欧图2",
+   "map_author": "小李子623",
+   "difficulty_level": 10,
+   "player": "不药而愈的匿名安慰",
+   "cleared_on": "2026-04-24",
+   "video_url": "https://www.bilibili.com/video/BV1NWojBcEvX",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "要素超载",
+   "map_author": "yyc12345",
+   "difficulty_level": 10,
+   "player": "LonelySnow",
+   "cleared_on": "2021-01-05",
+   "video_url": "https://www.bilibili.com/video/BV1R3411Y72g",
+   "is_fc": true,
+   "note": "中间一部分卡出了非90度视角，鉴于没有减少炼金难度，仍视为有效纪录"
+  },
+  {
+   "map_name": "要素超载",
+   "map_author": "yyc12345",
+   "difficulty_level": 10,
+   "player": "远古玫瑰的音符盒",
+   "cleared_on": "2021-02-16",
+   "video_url": "https://www.bilibili.com/video/BV1Fp4y1W7rF",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "要素超载",
+   "map_author": "yyc12345",
+   "difficulty_level": 10,
+   "player": "pseudoacetyl",
+   "cleared_on": "2023-09-13",
+   "video_url": "https://www.bilibili.com/video/BV1y8411i7QS",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "路面操作",
+   "map_author": "Entity_303",
+   "difficulty_level": 10,
+   "player": "渴望",
+   "cleared_on": "2021-04-30",
+   "video_url": "https://www.bilibili.com/video/BV16Q4y1Z7VV",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "乾坤五极",
+   "map_author": "Ghomist",
+   "difficulty_level": 10,
+   "player": "平衡球录像哥",
+   "cleared_on": "2026-09-05",
+   "video_url": "https://www.bilibili.com/video/BV1N3t166EVv",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "平衡之巅王者试炼之王道征途",
+   "map_author": "平衡四边球",
+   "difficulty_level": 10,
+   "player": "不药而愈的匿名安慰",
+   "cleared_on": "2026-09-18",
+   "video_url": "https://www.bilibili.com/video/BV1nBeS6FEhg",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "Level++ 3",
+   "map_author": "不药而愈的匿名安慰&平衡总统",
+   "difficulty_level": 10,
+   "player": "不药而愈的匿名安慰",
+   "cleared_on": "2026-08-10",
+   "video_url": "https://www.bilibili.com/video/BV1GSuo6zEAD",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "失落原野",
+   "map_author": "SomeOne_001",
+   "difficulty_level": 9,
+   "player": "不药而愈的匿名安慰",
+   "cleared_on": "2026-09-21",
+   "video_url": "https://www.bilibili.com/video/BV1Ngha6yESH",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "勇往直前4",
+   "map_author": "赢彻",
+   "difficulty_level": 9,
+   "player": "gamepiaynmo",
+   "cleared_on": "2020-03-29",
+   "video_url": "https://www.bilibili.com/video/BV1aZ4y1j7bQ",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "勇往直前4",
+   "map_author": "赢彻",
+   "difficulty_level": 9,
+   "player": "小小ballancer",
+   "cleared_on": "2020-03-29",
+   "video_url": "https://www.bilibili.com/video/BV147411D7Yy",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "勇往直前4",
+   "map_author": "赢彻",
+   "difficulty_level": 9,
+   "player": "LonelySnow",
+   "cleared_on": "2021-04-20",
+   "video_url": "https://www.bilibili.com/video/BV14y4y147Sh",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "勇往直前4",
+   "map_author": "赢彻",
+   "difficulty_level": 9,
+   "player": "pseudoacetyl",
+   "cleared_on": "2026-09-12",
+   "video_url": "https://www.bilibili.com/video/BV13UYD6EEp5",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "平衡小径4.0",
+   "map_author": "Burning红云",
+   "difficulty_level": 9,
+   "player": "该隐",
+   "cleared_on": "2020-04-11",
+   "video_url": "https://www.bilibili.com/video/BV1Gg4y187Vr",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "平衡小径4.0",
+   "map_author": "Burning红云",
+   "difficulty_level": 9,
+   "player": "渴望",
+   "cleared_on": "2026-03-17",
+   "video_url": "https://www.bilibili.com/video/BV1LMw9zeEzB",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "圈套（五小节版）",
+   "map_author": "Ballexer&Entity_303",
+   "difficulty_level": 9,
+   "player": "不药而愈的匿名安慰",
+   "cleared_on": "2026-04-24",
+   "video_url": "https://www.bilibili.com/video/BV1MVo5BFEJm",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "圈套（五小节版）",
+   "map_author": "Ballexer&Entity_303",
+   "difficulty_level": 9,
+   "player": "pseudoacetyl",
+   "cleared_on": "2026-09-12",
+   "video_url": "https://www.bilibili.com/video/BV1DUYD67E92",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "紧张图1",
+   "map_author": "紧张2007324",
+   "difficulty_level": 9,
+   "player": "迷惑大白",
+   "cleared_on": "2019-06-22",
+   "video_url": "https://www.bilibili.com/video/BV1s4411u7CV",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "紧张图1",
+   "map_author": "紧张2007324",
+   "difficulty_level": 9,
+   "player": "我喔窝卧沃握",
+   "cleared_on": "2020-08-13",
+   "video_url": "https://www.bilibili.com/video/BV1FA411e76q",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "云顶之弈",
+   "map_author": "zyl",
+   "difficulty_level": 9,
+   "player": "---卐卍---",
+   "cleared_on": "2026-09-20",
+   "video_url": "https://www.bilibili.com/video/BV1rsee6XEZS",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "望星城",
+   "map_author": "skictick & 澈零",
+   "difficulty_level": 9,
+   "player": "pseudoacetyl",
+   "cleared_on": "2024-04-27",
+   "video_url": "https://www.bilibili.com/video/BV1wM4m1f7ob",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "云幻天桥",
+   "map_author": "渴望 & dahkjdas & skictick & 平衡四边球 & 湮尘灬冷曦",
+   "difficulty_level": 9,
+   "player": "渴望",
+   "cleared_on": "2020-10-02",
+   "video_url": "https://www.bilibili.com/video/BV1zT4y1c7GE",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "1~13连打",
+   "map_author": "官方",
+   "difficulty_level": 9,
+   "player": "KyouyamaKazusa",
+   "cleared_on": "2021-07-19",
+   "video_url": "https://www.bilibili.com/video/BV1Sh411B7rh",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "1~13连打",
+   "map_author": "官方",
+   "difficulty_level": 9,
+   "player": "渴望",
+   "cleared_on": "2023-05-21",
+   "video_url": "https://www.bilibili.com/video/BV1Ym4y187GK",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "1~13连打",
+   "map_author": "官方",
+   "difficulty_level": 9,
+   "player": "湮尘灬冷曦",
+   "cleared_on": "2025-01-21",
+   "video_url": "https://www.bilibili.com/video/BV1ALwYefEvP",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "1~13连打",
+   "map_author": "官方",
+   "difficulty_level": 9,
+   "player": "变形的木球",
+   "cleared_on": "2025-05-01",
+   "video_url": "https://www.bilibili.com/video/BV132GazsEpB",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "1~13连打",
+   "map_author": "官方",
+   "difficulty_level": 9,
+   "player": "不药而愈的匿名安慰",
+   "cleared_on": "2025-10-21",
+   "video_url": "https://www.bilibili.com/video/BV1rMWDzpEC7",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "1~13连打",
+   "map_author": "官方",
+   "difficulty_level": 9,
+   "player": "该隐",
+   "cleared_on": "2026-03-11",
+   "video_url": "https://www.bilibili.com/video/BV12WcRzEEbk",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "1~13连打",
+   "map_author": "官方",
+   "difficulty_level": 9,
+   "player": "比利677",
+   "cleared_on": "2026-07-05",
+   "video_url": "https://www.bilibili.com/vifeo/BV1aTT26zEzq",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "东方夜谭",
+   "map_author": "Perfectthought",
+   "difficulty_level": 8,
+   "player": "perfectthought",
+   "cleared_on": "2019-02-09",
+   "video_url": "https://www.bilibili.com/video/BV1mb411U7mi",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "东方夜谭",
+   "map_author": "Perfectthought",
+   "difficulty_level": 8,
+   "player": "pseudoacetyl",
+   "cleared_on": "2026-09-12",
+   "video_url": "https://www.bilibili.com/video/BV1DUYD67EJa",
+   "is_fc": true,
+   "note": ""
+  },
+  {
+   "map_name": "圈套(四小节版)",
+   "map_author": "渴望:2021-04-05",
+   "difficulty_level": 8,
+   "player": "澈零",
+   "cleared_on": "2026-04-08",
+   "video_url": "https://www.bilibili.com/video/BV1B1DLBvEkn",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "1~12连打",
+   "map_author": "官方",
+   "difficulty_level": 8,
+   "player": "OsH锇氢",
+   "cleared_on": "2021-07-27",
+   "video_url": "https://www.bilibili.com/video/BV1NU4y1H7Hc",
+   "is_fc": false,
+   "note": ""
+  },
+  {
+   "map_name": "1~12连打",
+   "map_author": "官方",
+   "difficulty_level": 8,
+   "player": "湮尘灬冷曦",
+   "cleared_on": "2025-01-02",
+   "video_url": "https://www.bilibili.com/video/BV1G36qYaEK6",
+   "is_fc": false,
+   "note": ""
+  }
+ ],
+ "rules": {
+  "intro": [
+   "本表格记录大部分自制地图的一命通关难度",
+   "数字越高代表炼金难度越高，没有任何难度或不会死的图被评为“T0”，没有人一命通关过的难度被评为“暂无定义”",
+   "相关mod：GoldenMode，作者：Ghomist",
+   "榜单规则：除Level_13开局为石球，其余地图开局皆为木球（特殊地图可忽略），视频需提交在视频平台上，建议使用GoldenMode",
+   "排名按视频发布时间先后顺序决定",
+   "若榜单漏登错登、对难度有异议或想申请添加新地图进榜可联系",
+   "b站：小李子623，QQ：1060631687",
+   "由衷感谢“不药而愈的匿名安慰”对详细记录的审核与编写！！！"
+  ],
+  "faq": [
+   [
+    "在哪下载地图？",
+    "地图下载站：https://ballancemaps.ysupan.com/"
+   ],
+   [
+    "标红的地图是什么意思？",
+    "有特殊要求，具体请单击查看"
+   ],
+   [
+    "为什么规定T0是最简单的，数字越高越难？",
+    "防止上限定死"
+   ],
+   [
+    "没有使用GoldenMode打出一命/一命全分可以吗？",
+    "可以，但是在《详细记录》里名字会被标成灰色"
+   ],
+   [
+    "在mod发布之前打的也会被标成灰色吗？",
+    "不会"
+   ],
+   [
+    "第一节死了继续走可以吗？",
+    "可以，但前提是死前没有吃到分"
+   ],
+   [
+    "目前收录哪些平台的视频？",
+    "仅收录b站的视频，如有其它平台的视频请自行联系"
+   ],
+   [
+    "不小心卡出非90度怎么办？",
+    "只要没有降低难度就可以"
+   ],
+   [
+    "视频剪辑可以吗？",
+    "不可以，但视频在重复性画面处适当加速可以"
+   ]
+  ]
+ }
+}

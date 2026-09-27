@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>难度配色预览 T0 → T20+</title>
+    <style>
+      body { font-family: system-ui, "Microsoft YaHei", sans-serif; background: #fff; color: #111; margin: 24px; }
+      h1 { font-size: 18px; margin: 0 0 4px; }
+      p.note { color: #666; font-size: 13px; margin: 0 0 18px; line-height: 1.6; }
+      .row { display: flex; align-items: center; gap: 12px; padding: 3px 0; }
+      .tag { width: 48px; font-size: 12px; font-weight: 600; color: #555; text-align: right; }
+      .strip { width: 220px; height: 20px; border-radius: 3px; }
+      .badge { display: inline-flex; align-items: center; border: 1px solid; border-radius: 6px; padding: 1px 8px; font-size: 12px; font-weight: 600; }
+      .hex { font-family: ui-monospace, Consolas, monospace; font-size: 12px; color: #555; }
+      .ramp { display: flex; height: 40px; border-radius: 6px; overflow: hidden; margin-bottom: 20px; }
+      .ramp span { flex: 1; }
+    </style>
+  </head>
+  <body>
+    <h1>炼金难度配色：T0 → T20+</h1>
+    <p class="note">
+      一条连续彩虹：钢蓝 → 青 → 绿 → 黄 → 琥珀 → 橙 → 红 → 玫红 → 品红，相邻档位色相各差约 13°、饱和度/明度线性推进。<br />
+      左侧色块 = 地图库列表每行最左侧那条 8px 色带；右侧 = 同色系的难度徽标（底色 = 该色 15%、描边 = 该色 50%）。
+    </p>
+    <div class="ramp" id="ramp"></div>
+    <div id="list"></div>
+    <script>
+      const COLORS = [
+        "#8ba8d0", "#86b5d0", "#82c5d1", "#7dd2cc", "#78d3b8", "#72d4a2",
+        "#6dd58a", "#68d66e", "#75d762", "#8cd95d", "#a6da57",
+        "#c2dc52", "#ddd84c", "#dfb846", "#e19540", "#e36e3a",
+        "#e54434", "#e72e45", "#e9286a", "#eb2193", "#ee1bc0",
+        "#f014f0"
+      ];
+      const tone = (i) => {
+        if (i <= 3) return "#0369a1";
+        if (i <= 8) return "#047857";
+        if (i <= 13) return "#b45309";
+        if (i <= 17) return "#c2410c";
+        if (i <= 20) return "#be123c";
+        return "#a21caf";
+      };
+      const ramp = document.getElementById("ramp");
+      COLORS.forEach((color) => {
+        const cell = document.createElement("span");
+        cell.style.background = color;
+        ramp.appendChild(cell);
+      });
+      const list = document.getElementById("list");
+      COLORS.forEach((color, i) => {
+        const label = i === 21 ? "T20+" : `T${i}`;
+        const row = document.createElement("div");
+        row.className = "row";
+        row.innerHTML = `
+          <span class="tag">${label}</span>
+          <span class="strip" style="background:${color}"></span>
+          <span class="hex">${color}</span>
+          <span class="badge" style="color:${tone(i)};background:${color}26;border-color:${color}80">${label}</span>
+        `;
+        list.appendChild(row);
+      });
+    </script>
+  </body>
+</html>

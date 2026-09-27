@@ -1,0 +1,125 @@
+name: Deploy
+
+# 无 Docker 的直推部署（与 ballance-resource-hub 同一套做法）：
+#   web/** 变更       → Actions 里 pnpm build（base=/gb/）→ rsync 到服务器 ~/gbh/web/dist（不重启，秒级生效）
+#   app/** 等后端变更 → rsync 代码 → 服务器上 uv sync → systemctl restart gbh（停机 ~1-2s）
+# 站点：https://dl.ballance.top/gb/ （nginx 走 /gb/ 前缀 → 127.0.0.1:8001）
+# 首次服务器准备见 deploy/README.md
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  SERVER_PATH: /home/ghomist/gbh
+
+jobs:
+  # 判断这次推送动了前端还是后端，避免无关改动触发整套流程
+  detect:
+    runs-on: ubuntu-latest
+    outputs:
+      web: ${{ steps.filter.outputs.web }}
+      backend: ${{ steps.filter.outputs.backend }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 判断变更范围
+        id: filter
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "手动触发：前后端都重新部署"
+            echo "web=true" >> "$GITHUB_OUTPUT"
+            echo "backend=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          base="${{ github.event.before }}"
+          case "$base" in "" | "0000000000000000000000000000000000000000") base="HEAD~1" ;; esac
+          git diff --name-only "$base" "HEAD" | tee /tmp/changed.txt
+
+          grep -q '^web/' /tmp/changed.txt && web=true || web=false
+          grep -qE '^(app/|pyproject\.toml|uv\.lock|deploy/|\.github/)' /tmp/changed.txt && backend=true || backend=false
+
+          echo "web=$web" >> "$GITHUB_OUTPUT"
+          echo "backend=$backend" >> "$GITHUB_OUTPUT"
+
+  frontend:
+    needs: detect
+    if: needs.detect.outputs.web == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 准备 pnpm 与 Node
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.12.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+
+      # 生产构建的 base 是 /gb/（见 web/vite.config.ts），产物引用 /gb/assets/...
+      - name: 安装依赖并构建
+        working-directory: web
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm run build
+
+      - name: 准备部署密钥
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/deploy
+          chmod 600 ~/.ssh/deploy
+
+      # 原地同步（--delete + --delay-updates）：dist 文件名带 hash，index.html 最后落地
+      - name: 推送前端产物
+        run: |
+          rsync -az --delete --delay-updates \
+            -e "ssh -i ~/.ssh/deploy -p ${{ secrets.SERVER_PORT }} -o StrictHostKeyChecking=accept-new" \
+            web/dist/ "${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ env.SERVER_PATH }}/web/dist/"
+
+  backend:
+    needs: detect
+    if: needs.detect.outputs.backend == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 准备部署密钥
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/deploy
+          chmod 600 ~/.ssh/deploy
+          echo "SSH_OPTS=-i ~/.ssh/deploy -p ${{ secrets.SERVER_PORT }} -o StrictHostKeyChecking=accept-new" >> "$GITHUB_ENV"
+          echo "TARGET=${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}" >> "$GITHUB_ENV"
+
+      - name: 备份当前代码（供回滚）
+        run: |
+          ssh $SSH_OPTS "$TARGET" \
+            'rm -rf ~/gbh/app.rollback && cp -a ~/gbh/app ~/gbh/app.rollback'
+
+      - name: 同步后端代码与部署脚本
+        run: |
+          rsync -az --delete -e "ssh $SSH_OPTS" app/ "$TARGET:${{ env.SERVER_PATH }}/app/"
+          rsync -az -e "ssh $SSH_OPTS" scripts/ "$TARGET:${{ env.SERVER_PATH }}/scripts/"
+          rsync -az -e "ssh $SSH_OPTS" pyproject.toml uv.lock "$TARGET:${{ env.SERVER_PATH }}/"
+          rsync -az -e "ssh $SSH_OPTS" deploy/ "$TARGET:${{ env.SERVER_PATH }}/deploy/"
+
+      # 不动 .env 与 data/（两者都不在同步范围里）
+      - name: 同步依赖并重启服务
+        run: ssh $SSH_OPTS "$TARGET" 'bash ~/gbh/deploy/remote-deploy.sh'
+
+      - name: 验收公网入口
+        run: |
+          sleep 2
+          curl -fsS -o /dev/null -w '/gb/ -> %{http_code}\n' https://dl.ballance.top/gb/

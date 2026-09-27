@@ -1,0 +1,30 @@
+[Unit]
+Description=Ballance Golden Ball Hub (FastAPI + 前端静态文件，挂在 /gb 子路径)
+Documentation=file:///home/ghomist/gbh/deploy/README.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ghomist
+Group=ghomist
+# WorkingDirectory 必须是 ~/gbh：.env 与 sqlite:///./data/hub.db 都是相对 cwd 的，
+# 同时 main.py 用 Path(__file__).parent.parent 找 data/ 与 web/dist
+WorkingDirectory=/home/ghomist/gbh
+Environment=PATH=/home/ghomist/.local/bin:/usr/local/bin:/usr/bin:/bin
+# nginx 的 location /gb/ 会把前缀剥掉再转发，所以这里用 --root-path /gb，
+# 让 request.url_for() 生成 https://dl.ballance.top/gb/api/auth/callback（Flarum 回调白名单要一字不差）
+ExecStart=/home/ghomist/gbh/.venv/bin/uvicorn app.main:app \
+    --host 127.0.0.1 --port 8001 \
+    --root-path /gb \
+    --proxy-headers --forwarded-allow-ips *
+Restart=always
+RestartSec=2
+KillSignal=SIGINT
+TimeoutStopSec=15
+StandardOutput=journal
+StandardError=journal
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

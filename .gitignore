@@ -1,0 +1,13 @@
+.env
+.env.prod
+data/
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+web/dist/
+.vite/
+.DS_Store
+
+# 本地运维笔记与部署脚本（含服务器凭据，绝不提交）
+.local-logs/
