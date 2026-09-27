@@ -1,0 +1,10 @@
+# 仓库内统一 LF：服务器上要直接执行的脚本（remote-deploy.sh）带 CR 会报 "\r: command not found"
+* text=auto
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
