@@ -1,6 +1,6 @@
 .env
 .env.prod
-data/
+/data/
 __pycache__/
 *.py[cod]
 .venv/
@@ -11,3 +11,6 @@ web/dist/
 
 # 本地运维笔记与部署脚本（含服务器凭据，绝不提交）
 .local-logs/
+
+# 上面 /data/ 只锚定根目录的数据库目录；web/src/data/ 是前端源码，必须提交
+!web/src/data/
