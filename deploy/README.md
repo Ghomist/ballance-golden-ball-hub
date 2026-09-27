@@ -78,6 +78,19 @@ curl -fsS http://127.0.0.1:8001/api/health
 curl -fsS -o /dev/null -w '%{http_code}\n' https://dl.ballance.top/gb/
 ```
 
+## CI 自动部署（已接入）
+
+仓库 `Ghomist/ballance-golden-ball-hub`，推 `master` 触发 `.github/workflows/deploy.yml`：
+
+| 变更范围 | 动作 |
+|---|---|
+| `web/**` | Actions 里 `pnpm build`（production → base `/gb/`）→ rsync `web/dist` 到 `~/gbh/web/dist`（**不重启**，秒级生效） |
+| `app/**`、`scripts/**`、`pyproject.toml`、`uv.lock`、`deploy/**`、`.github/**` | 先把 `app/` 备份成 `app.rollback` → rsync 代码 → `bash ~/gbh/deploy/remote-deploy.sh`（uv sync + 重启 + 健康检查，失败自动回滚） |
+| 手动触发 / 首次推送 | 前后端都跑一遍 |
+
+Secrets（与资源站完全相同）：`SERVER_HOST`、`SERVER_PORT`、`SERVER_USER`、`SERVER_SSH_KEY`（同一把 `deploy_key` 私钥全文）。
+同步范围**不包含** `.env` 与 `data/`，所以部署不会动数据库和密钥。
+
 ## 日常运维
 
 ```bash
