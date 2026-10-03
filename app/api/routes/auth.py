@@ -9,7 +9,6 @@ from urllib.parse import quote, urlencode
 import httpx
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import RedirectResponse
-from sqlalchemy import create_engine, text
 from sqlalchemy.orm import Session
 
 from app.auth import create_token, verify_token
@@ -42,31 +41,18 @@ def _check_state(state: str) -> bool:
     return hmac.compare_digest(sig, expected)
 
 
-# Flarum 库只读连接：判定管理员组（group_id=1）。FLARUM_DB_URL 留空则禁用。
-_engine = None
+# Flarum 库只读连接已移除：管理员判定改由下载站签发 token 时的标记决定
+# （旧的 _is_flarum_admin 查的是 group_user，而论坛真实表名是 fl_group_user，
+#  永远返回 False，索性删掉）。
 
 
-def _is_flarum_admin(user_id: str) -> bool:
-    if not settings.flarum_db_url or not str(user_id).isdigit():
-        return False
-    global _engine
-    try:
-        if _engine is None:
-            _engine = create_engine(settings.flarum_db_url, pool_pre_ping=True)
-        with _engine.connect() as conn:
-            row = conn.execute(
-                text("SELECT 1 FROM group_user WHERE user_id = :uid AND group_id = 1 LIMIT 1"),
-                {"uid": int(user_id)},
-            ).first()
-        return row is not None
-    except Exception:
-        # DB 不可达/表缺失时不阻塞登录，降级为仅白名单判定。
-        return False
-
-
-@router.get("/login", summary="跳转 Flarum OAuth 登录")
+@router.get("/login", summary="跳转 Flarum OAuth 登录（备用路径）")
 def login(request: Request):
-    """把浏览器重定向到 Flarum oauth-center 授权端点。"""
+    """把浏览器重定向到 Flarum oauth-center 授权端点。
+
+    注意：现在前端登录统一走**下载站**的 /auth/login（两站共用 JWT_SECRET），
+    这里保留是给炼金站将来自己接论坛 OAuth 客户端时用的备用路径。
+    """
     redirect_uri = str(request.url_for("auth_callback"))
     params = {
         "client_id": settings.oauth_client_id,
@@ -136,7 +122,6 @@ async def callback(
     # Flarum 的 avatar_url 可能是相对路径，补成绝对。
     if avatar and not avatar.startswith("http"):
         avatar = f"{settings.forum_url.rstrip('/')}/{avatar.lstrip('/')}"
-    flarum_admin = await asyncio.to_thread(_is_flarum_admin, user_id)
 
     # 记录/更新本地用户，封禁用户直接拒之门外
     user_row = db.query(User).filter(User.user_id == user_id).first()
@@ -159,18 +144,45 @@ async def callback(
         "display_name": user_row.display_name,
         "avatar_url": avatar,
         "profile_url": user_row.profile_url,
-        "is_admin": username in settings.admin_usernames or flarum_admin,
+        "is_admin": username in settings.admin_usernames,
     }
     return _frontend_redirect(f"token={create_token(user)}")
 
 
 @router.get("/me", summary="当前用户信息")
-def me(payload: dict = Depends(verify_token)):
-    """从 JWT 还原当前用户"""
+def me(payload: dict = Depends(verify_token), db: Session = Depends(get_db)):
+    """从 JWT 还原当前用户。
+
+    token 由下载站统一签发（两站共用 JWT_SECRET，所以这边自己就能验）。顺手把用户
+    写进本地 users 表：排行榜/提交记录等旧功能是按 user_id 关联这张表的。
+    管理员标记直接取 token 里的（登录时由下载站判定：白名单 + 论坛管理员组）。
+    """
+    user_id = str(payload.get("user_id", ""))
+    username = payload.get("username", "") or user_id
+    display_name = payload.get("display_name", "") or username
+    avatar_url = payload.get("avatar_url", "")
+    profile_url = payload.get("profile_url", "")
+
+    if user_id:
+        user_row = db.query(User).filter(User.user_id == user_id).first()
+        if user_row is None:
+            user_row = User(user_id=user_id, username=username)
+            db.add(user_row)
+        else:
+            if user_row.banned:
+                raise HTTPException(status_code=403, detail="该账号已被封禁，如有疑问请联系管理员")
+        user_row.username = username
+        user_row.display_name = display_name
+        user_row.avatar_url = avatar_url
+        user_row.profile_url = profile_url or f"{settings.forum_url.rstrip('/')}/u/{username}"
+        user_row.last_login_at = datetime.utcnow()
+        db.commit()
+
     return {
-        **{
-            k: payload.get(k, "")
-            for k in ("user_id", "username", "display_name", "avatar_url", "profile_url")
-        },
+        "user_id": user_id,
+        "username": username,
+        "display_name": display_name,
+        "avatar_url": avatar_url,
+        "profile_url": profile_url or f"{settings.forum_url.rstrip('/')}/u/{username}",
         "is_admin": bool(payload.get("is_admin", False)),
     }

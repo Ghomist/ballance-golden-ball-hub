@@ -112,6 +112,16 @@ uv run python scripts/seed_import.py
 
 导入是幂等的：同名地图按名字更新作者/难度（并补上特殊规则），同一（玩家, 地图）记录已存在则跳过，但会把后来补上的视频链接、FC 标记、批注回填到旧记录上，不会重复插入。
 
+## 登录（与下载站共用）
+
+论坛（Flarum）OAuth 由**下载站**统一实现，炼金站不再自己接论坛：
+
+- 前端登录按钮 → `https://dl.ballance.top/auth/login?next=/gb/`（同源相对路径）
+- 论坛授权完，下载站把 `#token=<JWT>` 交回 `/gb/`，前端存在 localStorage（键 `auth_token` / `auth_user`）
+- 两站（本站与 `/gb/` 上的炼金站）**共用同一把 `JWT_SECRET`**，所以炼金站自己就能验 token，不依赖下载站在线；代价是改密钥两站同时登出
+- `is_admin` 由下载站在登录时判定并写进 token；`GET /api/auth/me` 会顺手把用户 upsert 进本地 `users` 表（排行榜/提交记录按 user_id 关联它）
+- 本仓的 `/api/auth/login` + `/api/auth/callback` 保留为**备用路径**（将来炼金站若自己申请论坛 OAuth 客户端可启用）；原来那段查 `group_user` 的论坛库只读判定已删除（论坛真实表名是 `fl_group_user`，那段代码永远返回 false）
+
 ## 生产部署
 
 线上：**`https://dl.ballance.top/gb/`**（子路径，nginx `location /gb/` → `127.0.0.1:8001`，systemd 服务 `gbh`，代码 `/home/ghomist/gbh`；部署细节见 `deploy/README.md`）。

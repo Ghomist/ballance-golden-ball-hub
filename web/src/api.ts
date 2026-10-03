@@ -19,8 +19,21 @@ import type {
  *  生产被部署在子路径下（https://dl.ballance.top/gb/），所以前缀由 vite 的 base 推导 */
 const BASE = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/api`;
 
-/** 登录是整页跳转，开发时必须直达后端，否则 OAuth 回调地址会落在 dev server 上 */
+/** 登录是整页跳转，统一走下载站的 /auth/login（两站共用 JWT_SECRET，token 互通）。
+ *  生产同源用相对路径；开发时直达下载站后端，否则回调会落在 dev server 上。 */
+export const HUB_AUTH_BASE = import.meta.env.DEV ? "http://127.0.0.1:8010" : "";
+
+/** 本后端地址（保留：炼金站将来自己接论坛 OAuth 客户端时走这条备用路径） */
 export const AUTH_BASE = import.meta.env.DEV ? "http://127.0.0.1:8000/api" : BASE;
+
+/** 与下载站**共用**的 localStorage 键：两站同源（/gb/ 是下载站的子路径），
+ *  在下载站登录后打开炼金站就是已登录状态。 */
+const TOKEN_KEY = "auth_token";
+
+function authHeaders(): Record<string, string> {
+  const token = localStorage.getItem(TOKEN_KEY) || "";
+  return token ? { Authorization: `Bearer ${token}` } : {};
+}
 
 export class ApiError extends Error {
   status: number;
@@ -50,8 +63,10 @@ async function request<T>(path: string, options: RequestOptions = {}): Promise<T
 
   const response = await fetch(url.toString(), {
     method: options.method ?? "GET",
-    credentials: "include",
-    headers: options.body === undefined ? undefined : { "Content-Type": "application/json" },
+    headers: {
+      ...authHeaders(),
+      ...(options.body === undefined ? {} : { "Content-Type": "application/json" })
+    },
     body: options.body === undefined ? undefined : JSON.stringify(options.body)
   });
 
@@ -93,8 +108,11 @@ export interface RecordQuery {
 export const api = {
   auth: {
     me: () => request<UserInfo | null>("/auth/me"),
-    loginUrl: () => `${AUTH_BASE}/auth/login`,
-    logout: () => request<{ ok: boolean }>("/auth/logout", { method: "POST" })
+    // 统一下载站入口：登录成功后由下载站把 #token= 交回站内路径（这里是 /gb/）
+    loginUrl: () =>
+      `${HUB_AUTH_BASE}/auth/login?next=${encodeURIComponent(
+        window.location.pathname + window.location.search
+      )}`
   },
 
   stats: () => request<Stats>("/stats"),
